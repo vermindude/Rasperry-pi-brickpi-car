@@ -11,4 +11,6 @@
  
  you will need a battery pack for powering the raspberry pi and the brickpi. you will need a moniter to connect the pi to the internet like this : [how to connect pi to internet](https://www.youtube.com/watch?v=7cQrNl0QVFA).
  
- #
+ # Building the chassis
+ 
+ When you build the chassis there is many ways to build it with suspension, differential locks, steering collums and many other things. there are many youtube videos on how to build all of these. make sure that you have enough room to fit all of you things, you need more than you think.
