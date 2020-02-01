@@ -7,4 +7,4 @@
  
  # Setting up the raspberry pi
  
- first you need to get [raspbian](https://www.dexterindustries.com/howto/install-raspbian-for-robots-image-on-an-sd-card/) and brickpi for robots on the same site. Make sure that you burn the image to the disk not just copy it the it on to the sd card or it will not work.
+ first you need to get [raspbian](https://www.dexterindustries.com/howto/install-raspbian-for-robots-image-on-an-sd-card/) and brickpi for robots on the same site. Make sure that you burn the image to the disk not just copy it the it on to the sd card or it will not work. When you connect the Brickpi to the Raspberry pi you attach
