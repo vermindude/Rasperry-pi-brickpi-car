@@ -9,4 +9,6 @@
  
  first you need to get [raspbian](https://www.dexterindustries.com/howto/install-raspbian-for-robots-image-on-an-sd-card/) and brickpi for robots on the same site. Make sure that you burn the image to the disk not just copy it the it on to the sd card or it will not work. When you connect the Brickpi to the Raspberry pi you attach them via the prongs.
  
- you will need a battery pack for powering the raspberry pi and the brickpi. you will need a moniter to connect the pi to the internet like this : [video](https://www.youtube.com/watch?v=7cQrNl0QVFA)
+ you will need a battery pack for powering the raspberry pi and the brickpi. you will need a moniter to connect the pi to the internet like this : [how to connect pi to internet](https://www.youtube.com/watch?v=7cQrNl0QVFA).
+ 
+ #
