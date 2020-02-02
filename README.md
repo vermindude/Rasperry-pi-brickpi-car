@@ -16,5 +16,6 @@
  When you build the chassis there is many ways to build it with suspension, differential locks, steering collums and many other things. there are many youtube videos on how to build all of these. make sure that you have enough room to fit all of you things, you need more than you think.
  
  Here is an example of what i built:
- [IMG_0003.MOV]
+ [video](IMG_0003.MOV)
+ 
  
