@@ -15,7 +15,6 @@
  
  When you build the chassis there is many ways to build it with suspension, differential locks, steering collums and many other things. there are many youtube videos on how to build all of these. make sure that you have enough room to fit all of you things, you need more than you think.
  
- Here is an example of what i built:
- [video](IMG_0003.MOV)
+ Here is an example of what you can build: ![example image](https://www.google.com/imgres?imgurl=https%3A%2F%2Fwww.mochub.com%2Fsites%2Fdefault%2Ffiles%2F2017-12%2Fsteering-with-lowering-suspension_copy.png&imgrefurl=https%3A%2F%2Fwww.mochub.com%2Fmoc%2Fheight-adjustable-suspension-unit&tbnid=Ts5vXusEYripLM&vet=12ahUKEwji4tXazbHnAhVWCs0KHRt6CygQMygLegUIARCmAg..i&docid=hl_tiZqYJL3U8M&w=800&h=600&q=lego%20car%20with%20suspension&ved=2ahUKEwji4tXazbHnAhVWCs0KHRt6CygQMygLegUIARCmAghttps://www.google.com/imgres?imgurl=https%3A%2F%2Fwww.mochub.com%2Fsites%2Fdefault%2Ffiles%2F2017-12%2Fsteering-with-lowering-suspension_copy.png&imgrefurl=https%3A%2F%2Fwww.mochub.com%2Fmoc%2Fheight-adjustable-suspension-unit&tbnid=Ts5vXusEYripLM&vet=12ahUKEwji4tXazbHnAhVWCs0KHRt6CygQMygLegUIARCmAg..i&docid=hl_tiZqYJL3U8M&w=800&h=600&q=lego%20car%20with%20suspension&ved=2ahUKEwji4tXazbHnAhVWCs0KHRt6CygQMygLegUIARCmAg)
  
  
