@@ -47,7 +47,7 @@ try:
             print(error)
             value = 0
 
-        print(f"VALUE IS: {value}")
+        print("VALUE IS:", str(value))
 
         if value:  # if the touch sensor is pressed
             BP.set_motor_power(BP.PORT_A, speed)
