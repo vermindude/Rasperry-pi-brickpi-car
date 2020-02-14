@@ -48,8 +48,10 @@ try:
             value = 0
 
         if value:  # if the touch sensor is pressed
+            print("SPEED NOW:", speed)
             if speed <= -100 or speed >= 100:  # if speed reached 100, start ramping down. If speed reached -100, start ramping up.
-                adder = -adder
+                #adder = -adder
+                adder = 0
             speed += adder
         else:  # else the touch sensor is not pressed or not configured, so set the speed to 0
             speed = 0
@@ -66,7 +68,7 @@ try:
         except IOError as error:
             print(error)
 
-        time.sleep(0.02)  # delay for 0.02 seconds (20ms) to reduce the Raspberry Pi CPU load.
+        time.sleep(0.2)  # delay for 0.02 seconds (20ms) to reduce the Raspberry Pi CPU load.
 
 except KeyboardInterrupt:  # except the program gets interrupted by Ctrl+C on the keyboard.
     BP.reset_all()  # Unconfigure the sensors, disable the motors, and restore the LED to the control of the BrickPi3 firmware.
