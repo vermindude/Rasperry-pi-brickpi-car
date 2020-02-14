@@ -41,8 +41,9 @@ try:
         # BP.get_sensor returns the sensor value.
         try:
             value = BP.get_sensor(BP.PORT_1)
+            print("VAL CHANGED TO ", value)
         except brickpi3.SensorError as error:
-            print(error)
+            print("ERROR:", error)
             value = 0
 
         if value:  # if the touch sensor is pressed
@@ -52,7 +53,7 @@ try:
         else:  # else the touch sensor is not pressed or not configured, so set the speed to 0
             speed = 0
             adder = 1
-
+        print ("GOT HERE")
         # Set the motor speed for all four motors
         BP.set_motor_power(BP.PORT_A + BP.PORT_B + BP.PORT_C + BP.PORT_D, speed)
 
