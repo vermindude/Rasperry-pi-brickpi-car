@@ -24,6 +24,7 @@ BP = brickpi3.BrickPi3()  # Create an instance of the BrickPi3 class. BP will be
 BP.set_sensor_type(BP.PORT_1,
                    BP.SENSOR_TYPE.TOUCH)  # Configure for a touch sensor. If an EV3 touch sensor is connected, it will be configured for EV3 touch, otherwise it'll configured for NXT touch.
 
+print("HELLOOOO")
 try:
     print("Press touch sensor on port 1 to run motors")
     value = 0
