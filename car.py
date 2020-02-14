@@ -19,6 +19,7 @@ from __future__ import division  # ''
 import time  # import the time library for the sleep function
 import brickpi3  # import the BrickPi3 drivers
 
+
 BP = brickpi3.BrickPi3()  # Create an instance of the BrickPi3 class. BP will be the BrickPi3 object.
 
 BP.set_sensor_type(BP.PORT_1,
@@ -41,18 +42,22 @@ try:
         # BP.get_sensor returns the sensor value.
         try:
             value = BP.get_sensor(BP.PORT_1)
+            print("YAY!!! GOT THE DAMN VALUE FROM THE SENSOR ON BP>PORT_1")
         except brickpi3.SensorError as error:
             print(error)
             value = 0
 
+        print(f"VALUE IS: {value}")
+
         if value:  # if the touch sensor is pressed
-            BP.set_motor_power(BP.PORT_A + BP.PORT_B + BP.PORT_C + BP.PORT_D, speed)
+            BP.set_motor_power(BP.PORT_A, speed)
+            time.sleep(3)
         else:  # else the touch sensor is not pressed or not configured, so set the speed to 0
             speed = 0
             adder = 1
 
         # Set the motor speed for all four motors
-        BP.set_motor_power(BP.PORT_A + BP.PORT_B + BP.PORT_C + BP.PORT_D, speed)
+        BP.set_motor_power(BP.PORT_A, speed)
         try:
             # Each of the following BP.get_motor_encoder functions returns the encoder value (what we want to display).
             print("Encoder A: %6d  B: %6d  C: %6d  D: %6d" % (
