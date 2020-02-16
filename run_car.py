@@ -23,7 +23,7 @@ BP = brickpi3.BrickPi3()  # Create an instance of the BrickPi3 class. BP will be
 
 BP.set_sensor_type(BP.PORT_1,
                    BP.SENSOR_TYPE.TOUCH)  # Configure for a touch sens
-# or. If an EV3 touch sensor is connected, it will be configured for EV3 touch, otherwise it'll configured for NXT touch.
+    # or. If an EV3 touch sensor is connected, it will be configured for EV3 touch, otherwise it'll configured for NXT touch.
 
 print("HELLOOOO")
 try:
@@ -38,7 +38,7 @@ try:
             pass
     print("the button was pressed!!!")
     power = 10
-
+    BP.set_motor_power(BP.PORT_C, power)
 
 except KeyboardInterrupt:  # except the program gets interrupted by Ctrl+C on the keyboard.
     BP.reset_all()  #    BP.set_motor_power(BP.PORT_A, power)
