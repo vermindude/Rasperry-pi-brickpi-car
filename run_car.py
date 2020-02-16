@@ -39,6 +39,7 @@ try:
     print("the button was pressed!!!")
     power = 10
     BP.set_motor_power(BP.PORT_A, power)
+    print("IT WENT !!!")
 
 except KeyboardInterrupt:  # except the program gets interrupted by Ctrl+C on the keyboard.
     BP.reset_all()  #    BP.set_motor_power(BP.PORT_A, power)
