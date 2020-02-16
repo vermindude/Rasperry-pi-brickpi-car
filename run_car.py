@@ -36,6 +36,7 @@ try:
         except brickpi3.SensorError:
             pass
     print("the button was pressed!!!  ")
+BP.set_motor_power(BP.PORT_C, power)
 
 
 except KeyboardInterrupt:  # except the program gets interrupted by Ctrl+C on the keyboard.
