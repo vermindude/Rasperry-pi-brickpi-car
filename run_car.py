@@ -35,43 +35,8 @@ try:
 
         except brickpi3.SensorError:
             pass
-    print("the button was pressed!!!")
-    speed = 0
-    adder = 1
-    while True:
-        # BP.get_sensor retrieves a sensor value.
-        # BP.PORT_1 specifies that we are looking for the value of sensor port 1.
-        # BP.get_sensor returns the sensor value.
-        try:
-            value = BP.get_sensor(BP.PORT_1)
-            print("VAL CHANGED TO ", value)
-        except brickpi3.SensorError as error:
-            print("ERROR:", error)
-            value = 0
+    print("the button was pressed!!!  ")
 
-        if value:  # if the touch sensor is pressed
-            print("the Button has been pressed!!")
-
-
-            # adder = -adder
-            # adder = 0
-            speed += adder
-        else:  # else the touch sensor is not pressed or not configured, so set the speed to 0
-            speed = 0
-            adder = 1
-        print("GOT HERE")
-        # Set the motor speed for all four motors
-        BP.set_motor_power(BP.PORT_A + BP.PORT_B + BP.PORT_C + BP.PORT_D, speed)
-
-        try:
-            # Each of the following BP.get_motor_encoder functions returns the encoder value (what we want to display).
-            print("Encoder A: %6d  B: %6d  C: %6d  D: %6d" % (
-                BP.get_motor_encoder(BP.PORT_A), BP.get_motor_encoder(BP.PORT_B), BP.get_motor_encoder(BP.PORT_C),
-                BP.get_motor_encoder(BP.PORT_D)))
-        except IOError as error:
-            print(error)
-
-        time.sleep(0.2)  # delay for 0.02 seconds (20ms) to reduce the Raspberry Pi CPU load.
 
 except KeyboardInterrupt:  # except the program gets interrupted by Ctrl+C on the keyboard.
     BP.reset_all()  # Unconfigure the sensors, disable the motors, and restore the LED to the control of the BrickPi3 firmware.
