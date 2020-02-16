@@ -28,12 +28,14 @@ print("HELLOOOO")
 try:
     print("Press touch sensor on port 1 to run motors")
     value = 0
+
     while not value:
         try:
             value = BP.get_sensor(BP.PORT_1)
+
         except brickpi3.SensorError:
             pass
-
+    print("the button was pressed!!!")
     speed = 0
     adder = 1
     while True:
