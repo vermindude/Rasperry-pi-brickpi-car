@@ -49,7 +49,7 @@ try:
 
         if value:  # if the touch sensor is pressed
             print("SPEED NOW:", speed)
-            if speed <= -100 or speed >= 100:  # if speed reached 100, start ramping down. If speed reached -100, start ramping up.
+            BP.set_motor_power(BP.PORT_A, speed)  # if speed reached 100, start ramping down. If speed reached -100, start ramping up.
                 #adder = -adder
                 adder = 0
             speed += adder
