@@ -37,7 +37,7 @@ try:
         except brickpi3.SensorError:
             pass
     print("the button was pressed!!!")
-    power = 500
+    power = 500, BP.speed(0)
     BP.set_motor_power(BP.PORT_A, power)
     print("IT WENT !!!")
 
