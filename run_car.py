@@ -39,7 +39,10 @@ try:
     print("the button was pressed!!!")
     speed = 50
     power = 500
+    target = 50
     BP.set_motor_power(BP.PORT_A, power)
+    BP.set_motor_dps(BP.PORT_A, target)
+
     print("IT WENT !!!")
 
 except KeyboardInterrupt:  # except the program gets interrupted by Ctrl+C on the keyboard.
