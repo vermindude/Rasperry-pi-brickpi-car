@@ -41,7 +41,8 @@ try:
     power = 100
     target = BP.set_motor_power(BP.PORT_A, power)
     BP.set_motor_dps(BP.PORT_A, target)
-
+    if value:
+        exit()
 
     print("IT WENT !!!")
 
