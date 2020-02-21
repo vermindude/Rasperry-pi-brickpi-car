@@ -39,7 +39,8 @@ try:
     print("the button was pressed!!!")
     speed = 50
     power = -25
-    BP.set_motor_power(BP.PORT_A, speed)
+    target = BP.set_motor_power(BP.PORT_A, power)
+    BP.set_motor_dps(BP.PORT_A, target)
     if value:
         exit()
 
