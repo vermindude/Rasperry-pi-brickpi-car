@@ -37,8 +37,7 @@ try:
         except brickpi3.SensorError:
             pass
     print("the button was pressed!!!")
-    speed = 25
-    power = -50
+    power = -25
     BP.set_motor_power(BP.PORT_A, power)
     if value:
         exit()
