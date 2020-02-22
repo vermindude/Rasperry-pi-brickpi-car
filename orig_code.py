@@ -59,6 +59,6 @@ try:
             print(error)
 
         time.sleep(0.02)  # delay for 0.02 seconds (20ms) to reduce the Raspberry Pi CPU load.
-
+    BP.reset_all()
 except KeyboardInterrupt:  # except the program gets interrupted by Ctrl+C on the keyboard.
     BP.reset_all()  # Unconfigure the sensors, disable the motors, and restore the LED to the control of the BrickPi3 firmware.
