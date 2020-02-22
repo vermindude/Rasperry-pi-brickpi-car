@@ -34,8 +34,8 @@ try:
         except brickpi3.SensorError:
             pass
 
-    speed = 0
-    adder = 1
+    speed = 50
+    #adder = 1
     while True:
         # BP.get_sensor retrieves a sensor value.
         # BP.PORT_1 specifies that we are looking for the value of sensor port 1.
@@ -49,8 +49,8 @@ try:
 
         if value:  # if the touch sensor is pressed
             if speed <= -100 or speed >= 100:  # if speed reached 100, start ramping down. If speed reached -100, start ramping up.
-                adder = -adder
-            speed += adder
+                #adder = -adder
+            #speed += adder
         else:  # else the touch sensor is not pressed or not configured, so set the speed to 0
             speed = 0
             adder = 1
