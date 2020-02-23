@@ -47,8 +47,8 @@ try:
             value = 0
 
         if value:  # if the touch sensor is pressed
-            speed = 10
-            BP.set_motor_power(BP.PORT_A, speed)
+            power = 10
+            BP.set_motor_power(BP.PORT_A, power)
 
         try:
             # Each of the following BP.get_motor_encoder functions returns the encoder value (what we want to display).
