@@ -47,7 +47,7 @@ try:
             value = 0
 
         if value:  # if the touch sensor is pressed
-            speed = 50
+            speed = 75
             BP.set_motor_power(BP.PORT_A, speed)
 
         try:
