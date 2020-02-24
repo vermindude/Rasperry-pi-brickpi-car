@@ -33,10 +33,9 @@ try:
         except brickpi3.SensorError:
             pass
 
-
     speed = 50
     #adder = 1
-    for x in range(20):
+    for x in range(15):
         # BP.get_sensor retrieves a sensor value.
         # BP.PORT_1 specifies that we are looking for the value of sensor port 1.
         # BP.get_sensor returns the sensor value.
