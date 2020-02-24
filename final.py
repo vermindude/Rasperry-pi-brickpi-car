@@ -35,7 +35,7 @@ try:
 
     speed = 99
     #adder = 1
-    for x in range(12):
+    for x in range(11):
         # BP.get_sensor retrieves a sensor value.
         # BP.PORT_1 specifies that we are looking for the value of sensor port 1.
         # BP.get_sensor returns the sensor value.
