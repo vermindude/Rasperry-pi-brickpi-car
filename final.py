@@ -33,7 +33,7 @@ try:
         except brickpi3.SensorError:
             pass
 
-    speed = 50
+    speed = 90
     #adder = 1
     for x in range(25):
         # BP.get_sensor retrieves a sensor value.
@@ -47,7 +47,7 @@ try:
             value = 0
 
         if value:  # if the touch sensor is pressed
-            speed = 50
+            #speed = 50
             BP.set_motor_power(BP.PORT_A, speed)
 
         try:
